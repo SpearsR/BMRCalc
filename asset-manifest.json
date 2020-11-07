@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/BMRCalc/static/css/main.1798e807.chunk.css",
+    "main.js": "/BMRCalc/static/js/main.428d9c57.chunk.js",
+    "main.js.map": "/BMRCalc/static/js/main.428d9c57.chunk.js.map",
+    "runtime-main.js": "/BMRCalc/static/js/runtime-main.b147578b.js",
+    "runtime-main.js.map": "/BMRCalc/static/js/runtime-main.b147578b.js.map",
+    "static/js/2.f11cab66.chunk.js": "/BMRCalc/static/js/2.f11cab66.chunk.js",
+    "static/js/2.f11cab66.chunk.js.map": "/BMRCalc/static/js/2.f11cab66.chunk.js.map",
+    "index.html": "/BMRCalc/index.html",
+    "static/css/main.1798e807.chunk.css.map": "/BMRCalc/static/css/main.1798e807.chunk.css.map",
+    "static/js/2.f11cab66.chunk.js.LICENSE.txt": "/BMRCalc/static/js/2.f11cab66.chunk.js.LICENSE.txt",
+    "static/media/title_background.2f7e0c9f.svg": "/BMRCalc/static/media/title_background.2f7e0c9f.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b147578b.js",
+    "static/js/2.f11cab66.chunk.js",
+    "static/css/main.1798e807.chunk.css",
+    "static/js/main.428d9c57.chunk.js"
+  ]
+}
