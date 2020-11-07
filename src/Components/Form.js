@@ -5,6 +5,8 @@ import React from 'react';
 let url = window.location.search;
 const urlParams = new URLSearchParams(url);
 
+
+
 //Declaring Variables
 let weight = urlParams.get('weight');
 let feet = urlParams.get('height');
@@ -57,25 +59,29 @@ genderCheck(gender);
 
 
 export default class Form extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {value: ''};
 
-    
+    }
+
     render(){
         return (
         <form className="main-form" action="index.html" method="GET">
         <label id='feetlabel' for="infeet">Height</label>
-        <input type="number" name="height" id="infeet" placeholder="feet" value={feet}/>
+        <input type="number" name="height" id="infeet" placeholder="feet" />
         <br/>
     
-        <input type="number" name="inches" id="ininch" placeholder="inches" value={inches}/>
+        <input type="number" name="inches" id="ininch" placeholder="inches" />
         <label id="incheslabel" for="ininch"></label>
         <br/>
     
         <label for="age">Age</label>
-        <input type="number" name="age" id="age" placeholder="years" value={age}/>
+        <input type="number" name="age" id="age" placeholder="years" />
         <br/>
     
         <label for="weight">Weight</label>
-        <input type="number" name="weight" id="weight" placeholder="pounds" value={weight}/>
+        <input type="number" name="weight" id="weight" placeholder="pounds" />
         <br/>
     
         <label>Gender</label>
@@ -89,6 +95,7 @@ export default class Form extends React.Component {
                 <label for="female">F</label>
             </div>
         </div>
+        <input type="reset" id="reset-box"/>
         <input type="submit" value="Submit" id="submit-box"/>
     </form>
         );

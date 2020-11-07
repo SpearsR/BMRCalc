@@ -88,12 +88,14 @@ body {
 .main-form input[type=number] {
   -moz-appearance: textfield;
 }
-.main-form #submit-box {
+.main-form #submit-box, .main-form #reset-box {
   width: fit-content;
   cursor: cursor;
   border: 3px solid white;
   padding: 10px 10px 40px 10px;
   border-radius: 5px;
+  margin: 15px;
+  cursor: pointer;
 }
 .main-form input:focus {
   outline: none;
