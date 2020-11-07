@@ -1,13 +1,143 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #161616;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.title-container {
+  position: relative;
 }
+.title-container .title-background {
+  margin: 0 auto 60px;
+  display: block;
+  width: 50%;
+  top: 20px;
+}
+.title-container h1 {
+  font-size: 3vw;
+  color: white;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.main-form {
+  background-color: #ff7070;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  /* Firefox */
+}
+.main-form input {
+  background-color: #ff7070;
+  border: none;
+  height: 40px;
+  width: 100%;
+  border-bottom: solid white 2px;
+  color: white;
+  font-size: 1.75em;
+  transition: 0.4s;
+}
+.main-form label {
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+.main-form .genderanswer {
+  display: flex;
+}
+.main-form .genderanswer .gender-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+.main-form .genderanswer .gender-container input[type=radio] {
+  margin: 0 0 10px 0;
+  width: 40px;
+  height: 40px;
+  border: 3px white solid;
+  border-radius: 5px;
+  cursor: pointer;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.main-form .genderanswer .gender-container input[type=radio]:checked {
+  background-color: white;
+}
+.main-form ::placeholder {
+  text-align: right;
+  color: white;
+  opacity: 0.4;
+}
+.main-form input::-webkit-outer-spin-button, .main-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.main-form input[type=number] {
+  -moz-appearance: textfield;
+}
+.main-form #submit-box {
+  width: fit-content;
+  cursor: cursor;
+  border: 3px solid white;
+  padding: 10px 10px 40px 10px;
+  border-radius: 5px;
+}
+.main-form input:focus {
+  outline: none;
+}
+
+.cal-total-container {
+  background-color: #ff7070;
+  width: fit-content;
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 10px;
+}
+.cal-total-container h2 {
+  text-align: center;
+  font-size: 24px;
+  color: white;
+}
+.cal-total-container .bmr-calorie {
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+  #root {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  #root .title-container {
+    width: 100%;
+  }
+  #root .title-container .title-background {
+    width: 80%;
+  }
+  #root .title-container h1 {
+    margin: 0;
+    top: 20px;
+    font-size: 3em;
+  }
+  #root .main-form {
+    width: 80%;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,112 @@
+$pinkcolor: #ff7070
+
+body
+    margin: 0
+    background-color:  rgb(22, 22, 22)
+
+.title-container
+    position: relative    
+    .title-background
+        margin: 0 auto 60px
+        display: block
+        width: 50%
+        top: 20px
+    h1
+        font-size: 3vw
+        color: white
+        position: absolute
+        margin-left: auto
+        margin-right: auto
+        left: 0
+        right: 0
+        text-align: center
+        margin-top: 30px
+
+.main-form
+    background-color: $pinkcolor
+    color: white
+    padding: 20px
+    border-radius: 20px
+    width: 500px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+    margin: 0 auto
+    input 
+        background-color: $pinkcolor
+        border: none
+        height: 40px
+        width: 100%
+        border-bottom: solid white 2px
+        color: white
+        font-size: 1.75em
+        transition: .4s
+
+    label
+        font-weight: bold
+        font-size: 2em
+        text-align: center
+
+    .genderanswer
+        display: flex
+        .gender-container
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            margin: 20px
+            input[type=radio]
+                margin: 0 0 10px 0
+                width: 40px
+                height: 40px
+                border: 3px white solid
+                border-radius: 5px
+                cursor: pointer
+                appearance: none
+                -moz-appearance: none
+                -webkit-appearance: none
+            input[type=radio]:checked
+                background-color: white
+    ::placeholder
+        text-align: right
+        color: white
+        opacity: .4
+    input::-webkit-outer-spin-button, input::-webkit-inner-spin-button 
+        -webkit-appearance: none
+        margin: 0
+    /* Firefox */
+    input[type=number] 
+        -moz-appearance: textfield
+
+    #submit-box
+        width: fit-content
+        cursor: cursor
+        border: 3px solid white
+        padding:10px 10px 40px 10px
+        border-radius: 5px
+
+    input:focus
+        outline: none
+
+.cal-total-container
+    background-color: $pinkcolor
+    width: fit-content
+    margin: 30px auto
+    padding: 15px
+    border-radius: 10px
+    h2    
+        text-align: center
+        font-size: 24px
+        color: white
+
+    .bmr-calorie
+        color: white
+        font-size: 30px
+        text-align: center
+        font-weight: bold
+    
+        
+
+// Mobile Sass Styling
+@import mobile
